@@ -1,0 +1,215 @@
+/* write your CSS here */
+body{
+	position: relative;
+}
+
+.heading{
+	padding-top: 35px;
+	padding-left: 15px;
+}
+
+.content{
+	margin-left: 3%;
+	margin-bottom: 10px;
+}
+
+#scroll{
+	position: fixed;
+	font-size: 30px;
+	right: 10px;
+	top: 50px;
+	color: white;
+}
+
+#scroll:hover{
+	color: #FC4A1A;
+}
+
+
+
+.navbar{
+	background-color: #111111;
+	opacity: 0.9;
+	letter-spacing: 3px;
+	padding-left: 5px;
+	padding-right: 20px;
+	border-bottom: none;
+}
+
+.navbar-nav li a:hover{
+	color: white
+}
+
+
+
+#home{
+	height: auto;
+	background-image: url(images/background.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-color: #4ABDAC;
+	border-bottom: 1px solid white;
+	padding: 0px;
+}
+
+#overlay-home{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	margin: 0px;
+}
+
+.title{
+	position: scroll;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-weight: 400;
+	padding-top: 10%;
+}
+
+#content-home{
+	position: scroll;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-weight: 400;
+	padding-bottom: 10%;
+}
+
+#nate-not:hover{
+	color: #FC4A1A;
+	cursor: pointer;
+}
+
+#clock{
+	font-size: 40px;
+	margin: 20px;
+}
+
+#total-time{
+	width: 80%;
+	height: 30px;
+	position: relative;
+	margin-left: 10%;
+	background-color: #111111;
+	opacity: 0.85;
+}
+
+#progress-bar{
+	background-color: white;
+	width: 0px;
+	height: 30px;
+	position: absolute;
+}
+
+.button{
+	background-color: transparent;
+	color: white;
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 20px;
+	border: 1px solid white;
+}
+
+.button:hover{
+	border: 3px double white;
+	font-weight: 500;
+}
+
+
+
+#about{
+	background-color: #3AAFA9;
+	color: white;
+	height: auto;
+	border-bottom: 1px solid white;
+	font-size: 18px;
+
+	background-image: url(images/clock.png);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-blend-mode: overlay;
+}
+
+#bill{
+	margin-right: 20px;
+	margin-bottom: 10px;
+	max-width: 300px;
+	float: left;
+	display: inline;
+}
+
+#content-about{
+	text-align: center;	
+	display: inline-block;
+	max-width: 550px;
+}
+
+#instructions{
+	max-width: 90%;
+	margin-left: 3%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+
+
+#games{
+	height: 600px;
+	background-color: #FDFEFE;
+	color: #1A1A1A;
+	border-bottom: 1px solid black;
+	height: auto;
+}
+
+.iframe{
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+
+
+#quote{
+	background-color: #111111;
+	color: white;
+	height: 150px;
+	text-align: center;
+	font-style:oblique;
+}
+
+
+
+#socmed{
+	height: auto;
+	background-color: white;
+	color: black;
+	border-bottom: 1px solid white;
+}
+
+
+
+#contact{
+	background-image: url("images/background4.jpg");
+	background-attachment: fixed;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.overlay{
+	width: 80%;
+	height: 80%;
+	background-color: rgba(255,255,255,0.6);
+	margin: 10%;
+	
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+#form{
+	text-align: left;
+	padding-left: 25%;
+	padding-bottom: 10px;
+}
