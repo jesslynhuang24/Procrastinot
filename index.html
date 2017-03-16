@@ -2,20 +2,15 @@
 <html lang="en">
     <head>
         <title>ProcrastiNOT</title>
-        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" type="text/css" href="style.css">
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
    
     <body onload="startTime()"> 
-
-    <a href="index.html"><div id="scroll" class="glyphicon glyphicon-chevron-up"></div></a>
-
+    	<a href="index.html"><div id="scroll" class="glyphicon glyphicon-chevron-up"></div></a>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Procrasti-NOT</a>
@@ -31,49 +26,33 @@
             </div>
         </nav>
 
-
-    
-        <div id="home" class="container-fluid"> <div id="overlay-home">
+        <div id="home" class="container-fluid">
+        <div id="overlay-home">
             <div class="title">
                 PROCRASTI<span onmouseover="not()" onmouseout="nate()" id="nate-not">NATE</span><font color="#FC4A1A"><strong>.</strong></font>
-            </div>
-
-            <br>
-
+            </div><br>
             <div id="content-home">
                 <button class="button" onclick="study()">Get on with it!</button>
                 <div id="total-time">
                     <div id="progress-bar" class="progress-bar active"></div>
                 </div>
-        
                 <div id="clock"></div>
-
-
                 <button class="button" onclick="rest()">Take a 5min rest <span class="glyphicon glyphicon-bed"></span></button>
                 <div id="total-time">
                     <div id="progress-bar" class="progress-bar active"></div>
                 </div>
-
-                <button class="button" onclick="reset()">
-                    Reset
-                </button>
-            </div></div>
+                <button class="button" onclick="reset()">Reset</button>
+            </div>
         </div>
-
-
+        </div>
 
         <div id="about" class="container-fluid">
             <h1 class="heading"></h1>
             <p class="content">
-
                 <img src="images/bill.jpg" id="bill" align="top">
-
-
                 <div id="content-about">
                     <br><h1>Welcome to PROCRASTI-NOT</h1>A website where you can procrastinate the right way!<br>Periodically schedule 30-minute study periods, and take 5-minute breaks in between.<br>
                 </div>
-
-
                 <div id="instructions">  
                     <h3>How does it work?</h3>
                     <ol>
@@ -89,29 +68,19 @@
             </p>
         </div>
         
-
-
-
         <div id="games" class="container-fluid">
             <h1 class="heading">Games</h1>
-
             <div class="content">
                 <iframe class="iframe" style="height: 450px; width: 300px;" src="http://games.gamepix.com/play/40162" width="300" height="450" frameborder="0" scrolling="no"></iframe>
                 <iframe class="iframe" style="height: 450px; width: 300px;" src="http://games.gamepix.com/play/40264?sid=30057" width="300" height="450" frameborder="0" scrolling="no"></iframe>
-                <iframe class="iframe" style="height: 450px; width: 300px;" src="http://games.gamepix.com/play/20035" width="300" height="450" frameborder="0" scrolling="no"></iframe>
-                
+                <iframe class="iframe" style="height: 450px; width: 300px;" src="http://games.gamepix.com/play/20035" width="300" height="450" frameborder="0" scrolling="no"></iframe>  
             </div>
-
         </div>
-
 
         <div id="quote" class="container-fluid">
             <h1 class="heading">Yesterday you said tomorrow.</h2>
             -Nike
         </div>
-
-
-
 
         <div id="socmed" class="container-fluid">
             <h1 class="heading">Social Media</h1>
@@ -121,8 +90,6 @@
                 <iframe class="iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fviralthread%2F&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="300" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             </div>
         </div>
-
-
         
         <div id="contact" class="container-fluid">
            <div class="overlay">
@@ -141,20 +108,14 @@
                         <input type="submit" value="send">
                     </form>
                 </div>
-
            </div>
         </div>
 
 
-
-
-
     <script src="jquery-3.1.1.js"></script>
-
     <script type="text/javascript">
 
         console.log("hi there")
-
 
         //Display current time
         function startTime() {
@@ -168,16 +129,13 @@
             h + ":" + m + ":" + s;
             var t = setTimeout(startTime, 500);
         }
-        
         function checkTime(i) {
             if (i < 10) {i = "0" + i};
             return i;
         }
 
-
-        //Study progress bar 1 min = 600 = 0.6sec * 100 = 60sec
+        //Study progress bar 1 min = 600
         //30 min = 18000
-        //10 min = 6000
         function study() {
             var width = 0;
             var id = setInterval(function() {
@@ -189,8 +147,7 @@
             }, 18000);
         }
 
-
-        //Break progress bar 1 min = 600 = 0.6sec * 100 = 60sec
+        //Break progress bar 1 min = 600
         //5 min = 3000
         function rest() {
             var width = 0;
@@ -206,7 +163,6 @@
         //Reset
         function reset(){location.reload();}
 
-
         //Change -nate -> -not
         function not() {
             document.getElementById("nate-not").innerHTML = "-NOT"
@@ -215,10 +171,7 @@
             document.getElementById("nate-not").innerHTML = "NATE"
         };
 
-        
-
     </script>
-
-
+    
     </body>
 </html>
