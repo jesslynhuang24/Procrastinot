@@ -191,7 +191,8 @@ body{
 
 
 #contact{
-	background-image: url("images/background4.jpg");
+	background-image: url(images/background.jpg);
+	background-size: 100%;
 	background-attachment: fixed;
 	color: white;
 	border-bottom: 1px solid white;
